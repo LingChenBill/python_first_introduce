@@ -22,6 +22,8 @@ print(name[:5])
 # 找出你朋友中魔鬼
 word = 'friends'
 find_the_evil_in_your_friends = word[0] + word[2:4] + word[-3:-1]
+print(word[2:4])
+print(word[-3:-1])
 print(find_the_evil_in_your_friends)
 
 # 解析爬虫后的图片地址，以一个统一的方式进行重命名:以链接尾部倒数10个字符的方式进行命名

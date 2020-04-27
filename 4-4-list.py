@@ -8,25 +8,25 @@
 #   在Python中任何对象都可判断其布尔值，除了0、None和所有空的序列与集合的布尔值为False之外，其它的都为True
 
 album = []
-print(album)
+print("1:", album)
 
 album = ['Blank Star', 'David Bowie', 25, True]
-print(album)
+print("2:", album)
 
 album.append('new song')
-print(album)
+print("3:", album)
 
-print(album[0], album[-1])
+print("4:", album[0], album[-1])
 
-print('Blank Star' in album)
+print("5:", 'Blank Star' in album)
 
 the_Eddie = 'Eddie'
 name = 'Eddie'
-print(the_Eddie == name)
-print(the_Eddie is name)
+print("6:",  the_Eddie == name)
+print("7:", the_Eddie is name)
 
-print(bool(0))
-print(bool([]))
-print(bool(''))
-print(bool(False))
-print(bool(None))
+print("8:", bool(0))
+print("9:", bool([]))
+print("10:", bool(''))
+print("11:", bool(False))
+print("12:", bool(None))
