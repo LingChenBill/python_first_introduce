@@ -94,3 +94,12 @@ def get_from_store():
 
     return all_athletes
 
+
+def get_names_from_store():
+    """
+    将选手名列表作为一个字符串返回
+    :return:
+    """
+    athletes = get_from_store()
+    response = [athletes[each_ath].name for each_ath in athletes]
+    return response
