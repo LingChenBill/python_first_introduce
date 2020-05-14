@@ -9,8 +9,12 @@ mikey = {}
 sarah = {}
 
 
-# 读取文件数据
 def get_coach_data(file_name):
+    """
+    读取文件数据，返回一个字典结构
+    :param file_name:
+    :return:
+    """
     try:
         with open(file_name) as f:
             data = f.readline()

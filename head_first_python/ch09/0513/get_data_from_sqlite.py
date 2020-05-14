@@ -21,8 +21,8 @@ def get_names_from_store():
     return response
 
 
-# result_name = get_names_from_store()
-# print(result_name)
+result_name = get_names_from_store()
+print(result_name)
 
 
 def get_names_id_from_store():

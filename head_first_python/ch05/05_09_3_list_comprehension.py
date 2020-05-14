@@ -28,7 +28,7 @@ def sanitize(time_string):
         return time_string
     (mins, secs) = time_string.split(splitter)
 
-    return (mins + '.' + secs)
+    return mins + '.' + secs
 
 
 clean = [sanitize(t) for t in ['2-22', '3:33', '4.44']]
