@@ -1,0 +1,2 @@
+Sample code for Chapter 3 - "Dictionaries and sets code"
+From the book "Fluent Python" by Luciano Ramalho (O'Reilly, 2015)
