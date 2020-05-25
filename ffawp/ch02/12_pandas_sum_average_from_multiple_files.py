@@ -1,6 +1,8 @@
 # Date:2020/5/24
 # Author:Lingchen
 # Mark: 利用pandas来实现计算每个文件中值的总和与均值
+#       python 12_pandas_sum_average_from_multiple_files.py
+#       /Users/user_name/Documents/fork/python_first_introduce/ffawp/ch02/data data/output/12_output_pandas.csv
 import pandas as pd
 import glob
 import sys
