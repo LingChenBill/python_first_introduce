@@ -1,6 +1,8 @@
 # Date:2020/5/26
 # Author:Lingchen
 # Mark: 使用pandas 从第一个和第二个工作表中筛选出销售额大于$1900.00的那些行
+#       python 11_pandas_excel_value_meets_condition_set_of_worksheets.py
+#       data/sales_2013.xlsx data/output/11_output_pandas.xlsx
 import sys
 import pandas as pd
 
