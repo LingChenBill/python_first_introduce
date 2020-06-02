@@ -1,6 +1,7 @@
 # Date:2020/6/1
 # Author:Lingchen
 # Mark: 将数据从CSV文件中插入到数据表Suppliers
+#       python 4_db_mysql_load_from_csv.py data/supplier_data.csv
 import csv
 import MySQLdb
 import sys
@@ -22,6 +23,7 @@ for row in file_reader:
         if column_index < 4:
             data.append(str(row[column_index]).lstrip('$').replace(',', '').strip())
         else:
+            # %Y：year的格式是四位数，如：2012，%y的格式是两位数，如12
             # 将csv中的日期字符串转换成日期
             a_date = datetime.date(datetime.strptime(str(row[column_index]), '%m/%d/%y'))
             # print('a_date: ', a_date)
@@ -31,6 +33,7 @@ for row in file_reader:
             data.append(a_date)
         print(data)
 
+    # %s是要插入的实际值的占位符
     c.execute("""INSERT INTO Suppliers VALUES (%s, %s, %s, %s, %s);""", data)
 
 con.commit()
