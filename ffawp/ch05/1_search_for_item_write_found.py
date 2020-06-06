@@ -58,7 +58,7 @@ for input_file in glob.glob(os.path.join(path_to_folder, '*.*')):
                 for column in range(len(header)):
                     # 金额列
                     if column == 3:
-                        # 金额去 $ 和 , 和空格
+                        # 金额去 $ 和 , 和空格、制表符和换行符
                         cell_value = str(row[column]).lstrip('$').replace(',', '').strip()
                         row_of_output.append(cell_value)
                     else:
@@ -85,8 +85,10 @@ for input_file in glob.glob(os.path.join(path_to_folder, '*.*')):
                 header = worksheet.row_values(0)
 
             except IndexError:
+                # 下标越界，就执行Python关键字pass，实际上就是什么都不做
                 pass
 
+            # 数据行循环
             for row in range(1, worksheet.nrows):
                 row_of_output = []
 
